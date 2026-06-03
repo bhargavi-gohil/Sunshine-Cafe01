@@ -1,0 +1,418 @@
+/* General Styles */
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    color: #f5f5f5; /* Light Gray */
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #8B4513; /* SaddleBrown */
+    padding: 15px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #FFD700; /* Gold */
+    background-color: #4a2c2a; /* Darker background */
+    border-radius: 5px;
+}
+
+/* Main Content Styling */
+.menu, main {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    margin: auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-family: Impact, serif;
+    color: #8B4513; /* SaddleBrown */
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Impact, serif;
+    color: #8B4513; /* SaddleBrown */
+}
+
+p {
+    text-align: center;
+    color: #333333; /* Dark Gray */
+}
+
+.established {
+    font-style: italic;
+    color: #333333; /* Dark Gray */
+}
+
+/* Menu Items */
+.item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 8px 0;
+    color: #333333; /* Dark Gray */
+}
+
+.item:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background on hover */
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.flavor, .dessert {
+    text-align: left;
+    width: 75%;
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* Menu Images */
+.menu-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.menu-img:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 10px;
+    width: 50px;
+}
+
+/* Horizontal Line */
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line {
+    margin-top: 25px;
+}
+
+/* Footer */
+footer {
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4a2c2a;
+    color: white;
+    border-radius: 10px;
+}
+
+footer a:hover {
+    color: #FFD700; /* Gold */
+    text-decoration: underline;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFD700; /* Gold */
+}
+
+/* Marquee Text */
+.marquee-text {
+    color: #FFD700; /* Gold */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+}
+
+.intro-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 30px;
+    color: #8B4513; /* SaddleBrown */
+}
+
+.intro p {
+    font-size: 18px;
+    color: #333333; /* Dark Gray */
+}
+
+.intro-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Map Container */
+.map-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+}
+
+.map-container h2 {
+    font-size: 30px;
+    color: #8B4513; /* SaddleBrown */
+    margin-bottom: 15px;
+}
+
+/* Highlights Section */
+.highlights {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+    text-align: center;
+}
+
+.highlights h2 {
+    font-size: 30px;
+    color: #8B4513; /* SaddleBrown */
+    margin-bottom: 20px;
+}
+
+.highlight {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    vertical-align: top;
+}
+
+.highlight:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background on hover */
+    border-radius: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.highlight img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.highlight p {
+    font-size: 16px;
+    color: #333333; /* Dark Gray */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu, main {
+        width: 95%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Improved spacing for sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Grid View */
+.grid-view ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-view ul li {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+/* Font Colors */
+body {
+    color: #f5f5f5; /* Light Gray */
+}
+
+h1, h2 {
+    color: #8B4513; /* SaddleBrown */
+}
+
+p, .item, .radio-group label {
+    color: #333333; /* Dark Gray */
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #FFD700; /* Gold */
+}
+
+.marquee-text {
+    color: #FFD700; /* Gold */
+}
+
+/* Login Form */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+}
+
+.login-form h1 {
+    font-size: 30px;
+    color: #8B4513; /* SaddleBrown */
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333333; /* Dark Gray */
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+    background-color: #FFD700; /* Gold */
+}
+
+/* Register Form */
+.register-form {
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    color: #333333; /* Dark Gray */
+}
+
+.register-form h1 {
+    font-size: 30px;
+    color: #8B4513; /* SaddleBrown */
+    margin-bottom: 20px;
+}
+
+.register-form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #333333; /* Dark Gray */
+}
+
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #8B4513; /* SaddleBrown */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.register-form button:hover {
+    background-color: #FFD700; /* Gold */
+}
